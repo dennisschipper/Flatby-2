@@ -2,35 +2,14 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8376",
   "files" : {
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
-    },
-    "\/stylesheets\/ie.css" : {
+    "\/stylesheets\/print.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/ie.css",
+      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
-    },
-    "\/sass\/ie.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/ie.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/stylesheets\/screen.css" : {
       "ignoreWasSetByUser" : 0,
@@ -41,12 +20,12 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/stylesheets\/print.css" : {
+    "\/stylesheets\/ie.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
+      "inputAbbreviatedPath" : "\/stylesheets\/ie.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -58,6 +37,40 @@
       "inputAbbreviatedPath" : "\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/_nav.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_nav.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_nav.haml" : {
+      "inputAbbreviatedPath" : "\/_nav.haml",
+      "outputAbbreviatedPath" : "\/test2.html",
+      "outputPathIsSetByUser" : 0,
+      "escapeHTMLCharacters" : 0,
+      "useUnixNewlines" : 0,
+      "useCDATA" : 0,
+      "ignore" : 0,
+      "noEscapeInAttributes" : 0,
+      "outputFormat" : 2,
+      "useDoubleQuotes" : 0,
+      "ignoreWasSetByUser" : 0,
+      "hidden" : 0,
+      "fileType" : 256,
+      "outputStyle" : 0
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -71,6 +84,52 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/test2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test2.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/sass\/ie.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/ie.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/test.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/test.haml" : {
+      "inputAbbreviatedPath" : "\/test.haml",
+      "outputAbbreviatedPath" : "\/test.html",
+      "outputPathIsSetByUser" : 0,
+      "escapeHTMLCharacters" : 0,
+      "useUnixNewlines" : 0,
+      "useCDATA" : 0,
+      "ignore" : 0,
+      "noEscapeInAttributes" : 0,
+      "outputFormat" : 2,
+      "useDoubleQuotes" : 0,
+      "ignoreWasSetByUser" : 0,
+      "hidden" : 0,
+      "fileType" : 256,
+      "outputStyle" : 0
+    },
     "\/sass\/print.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -82,6 +141,15 @@
       "outputAbbreviatedPath" : "\/stylesheets\/print.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/test.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test.kit",
+      "outputAbbreviatedPath" : "\/test.html",
+      "fileType" : 65536
     }
   },
   "manualImportLinks" : [
