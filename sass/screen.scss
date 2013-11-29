@@ -9,6 +9,8 @@ $color-flatby-text: #2c2c2c;
 $color-flatby-background: #f5f5f5;
 $border-radius: 4px;
 
+$global-margin: 1em;
+
 
 
 body {
@@ -28,13 +30,57 @@ h1 {
 	font-size: 2em;
 }
 
+.image-fluid {
+	width: 100%;
+}
+
+$global-padding: 1em;
+
+.padded-content {
+	padding: $global-padding;
+}
+
 section, header {
 	@include box-sizing(border-box);
 	margin: 0 auto;
-	padding: 2em;
-	margin-bottom: 2em;
-	width: 1180px;
+	padding: $global-padding;
+	margin-bottom: $global-margin;
+	max-width: 1180px;
 	background: #fff;
+
+	&.transparent {
+		background: none;
+	}
+}
+
+a {
+	&.active {
+		color: $color-flatby-main;
+	}
+}
+
+nav {
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			border-right: 1px solid #e7e7e7;
+
+			a {
+				color: $color-flatby-text;
+				text-decoration: none;
+				padding: 0.5em 2em;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.main-navigation {
+	margin-bottom: $global-margin;
 }
 
 .button {
@@ -48,3 +94,83 @@ section, header {
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
 }
+
+
+
+
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #eaeaea;
+}
+
+
+
+.no-padding {
+	padding: 0;
+}
+
+
+.main-blurb {
+	@extend .no-padding;
+	text-align: center;
+	margin-bottom: 3em;
+
+	h1, h2 {
+		line-height: 1em;
+		display: block;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	h1 {
+		font-size: 4.5em;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	h2 {
+		opacity: 0.4;
+		font-size: 1.1em;
+	}
+
+	hr {
+		margin: 35px 55px;
+	}
+
+	p {
+		padding-left: 10em;
+		padding-right: 10em;
+		opacity: 0.4;
+	}
+
+	.button {
+		position: relative;
+		top: 45px;
+	}
+}
+
+
+
+
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background: $color-flatby-main;
+	border-bottom: 4px solid #459c88;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
