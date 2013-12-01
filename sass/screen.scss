@@ -6,12 +6,15 @@
 $font-stack-flatby: 'Proxima Nova', Helvetica, Arial;
 $color-flatby-main: #4cbfa4;
 $color-flatby-text: #2c2c2c;
+$color-flatby-text-faded: #676767;
 $color-flatby-background: #f5f5f5;
 $border-radius: 4px;
 
 $global-margin: 1em;
 
-
+* {
+	@include box-sizing(border-box);
+}
 
 body {
 	color: $color-flatby-text;
@@ -41,7 +44,6 @@ $global-padding: 1em;
 }
 
 section, header {
-	@include box-sizing(border-box);
 	margin: 0 auto;
 	padding: $global-padding;
 	margin-bottom: $global-margin;
@@ -50,6 +52,19 @@ section, header {
 
 	&.transparent {
 		background: none;
+	}
+}
+
+article {
+	h1 {
+		font-size: 1.2em;
+		font-weight: 600;
+		padding-bottom: 0px;
+	}
+
+	p {
+		padding-bottom: 0.5em;
+		color: $color-flatby-text-faded;
 	}
 }
 
@@ -166,11 +181,29 @@ hr {
 
 
 
+.clear {
+	clear: both;
+}
 
 
 
 
+// Genral structure stuff (to be moved to their own files)
+
+@import "compass/utilities/general/clearfix";
 
 
+.columns {
+	@include pie-clearfix;
+}
+
+.columns-2 {
+	width: 50%;
+	float: left;
+}
+
+.columns-2 {
+	
+}
 
 
