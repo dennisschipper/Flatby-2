@@ -78,58 +78,81 @@ h1 {
   font-size: 2em; }
 
 /* line 36, ../sass/screen.scss */
+h2 {
+  font-weight: 300;
+  font-size: 1.8em;
+  margin-bottom: 10px; }
+
+/* line 42, ../sass/screen.scss */
+.featured-header {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+/* line 49, ../sass/screen.scss */
 .image-fluid {
   width: 100%; }
 
-/* line 42, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .padded-content {
   padding: 1em; }
 
-/* line 46, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 section, header {
   margin: 0 auto;
   padding: 1em;
   margin-bottom: 1em;
   max-width: 1180px;
   background: #fff; }
-  /* line 53, ../sass/screen.scss */
+  /* line 66, ../sass/screen.scss */
   section.transparent, header.transparent {
     background: none; }
 
-/* line 59, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 article h1 {
   font-size: 1.2em;
   font-weight: 600;
   padding-bottom: 0px; }
-/* line 65, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 article p {
   padding-bottom: 0.5em;
   color: #676767; }
+/* line 83, ../sass/screen.scss */
+article.featured {
+  position: relative;
+  width: 60%;
+  padding-left: 170px;
+  min-height: 150px;
+  background: white url(../images/photo-150x150.jpg) no-repeat top left; }
+  /* line 90, ../sass/screen.scss */
+  article.featured img {
+    float: left; }
 
-/* line 72, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 a.active {
   color: #4cbfa4; }
 
-/* line 79, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 nav ul {
   margin: 0;
   padding: 0; }
-  /* line 83, ../sass/screen.scss */
+  /* line 108, ../sass/screen.scss */
   nav ul li {
     display: inline-block;
     border-right: 1px solid #e7e7e7; }
-    /* line 87, ../sass/screen.scss */
+    /* line 112, ../sass/screen.scss */
     nav ul li a {
       color: #2c2c2c;
       text-decoration: none;
       padding: 0.5em 2em;
       display: inline-block; }
 
-/* line 97, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .main-navigation {
   margin-bottom: 1em; }
 
-/* line 101, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .button {
   font-weight: 600;
   display: inline-block;
@@ -139,62 +162,72 @@ nav ul {
   padding: 1em 2em;
   border-radius: 4px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33); }
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
+  text-align: center; }
+  /* line 138, ../sass/screen.scss */
+  .button.button-external {
+    position: absolute;
+    right: -200px;
+    bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+    width: 200px;
+    padding: 0.5em; }
 
-/* line 117, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 hr {
   border: 0;
   height: 1px;
   background: #eaeaea; }
 
-/* line 125, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .no-padding, .main-blurb {
   padding: 0; }
 
-/* line 130, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .main-blurb {
   text-align: center;
   margin-bottom: 3em; }
-  /* line 135, ../sass/screen.scss */
+  /* line 171, ../sass/screen.scss */
   .main-blurb h1, .main-blurb h2 {
     line-height: 1em;
     display: block;
     text-transform: uppercase;
     font-weight: 700; }
-  /* line 142, ../sass/screen.scss */
+  /* line 178, ../sass/screen.scss */
   .main-blurb h1 {
     font-size: 4.5em;
     margin-top: 50px;
     margin-bottom: 30px; }
-  /* line 148, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   .main-blurb h2 {
     opacity: 0.4;
     font-size: 1.1em; }
-  /* line 153, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   .main-blurb hr {
     margin: 35px 55px; }
-  /* line 157, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   .main-blurb p {
     padding-left: 10em;
     padding-right: 10em;
     opacity: 0.4; }
-  /* line 163, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   .main-blurb .button {
     position: relative;
     top: 45px; }
 
-/* line 173, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .button {
   display: inline-block;
   border-radius: 4px;
   background: #4cbfa4;
   border-bottom: 4px solid #459c88; }
 
-/* line 184, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .clear {
   clear: both; }
 
-/* line 196, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .columns {
   *zoom: 1; }
   /* line 38, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -203,7 +236,7 @@ hr {
     display: table;
     clear: both; }
 
-/* line 200, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .columns-2 {
   width: 50%;
   float: left; }
