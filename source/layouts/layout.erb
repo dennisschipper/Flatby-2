@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <title><%= current_page.data.title || "The Middleman" %></title>
+        <%= stylesheet_link_tag "screen", "fonts", "responsive-nav" %>
+        <%= javascript_include_tag  "all" %>
+    </head>
+  
+    <body class="<%= page_classes %>">
+        <%= yield %>
+
+        <script>
+            var navigation = responsiveNav(".nav-collapse");
+        </script>
+    </body>
+</html>
