@@ -11,6 +11,8 @@ $color-flatby-background: #f5f5f5;
 $border-radius: 4px;
 
 $global-margin: 1em;
+$global-padding: 1em;
+$global-padding-tiny: 0.33em;
 
 $bold: 700;
 
@@ -54,7 +56,7 @@ h2 {
 	width: 100%;
 }
 
-$global-padding: 1em;
+
 
 .padded-content {
 	padding: $global-padding;
@@ -62,7 +64,7 @@ $global-padding: 1em;
 
 section, header {
 	margin: 0 auto;
-	padding: $global-padding;
+	padding: $global-padding-tiny;
 	margin-bottom: $global-margin;
 	max-width: 1180px;
 	background: #fff;
@@ -96,34 +98,15 @@ article {
 	}
 }
 
+
+
+
+
+
 a {
 	&.active {
 		color: $color-flatby-main;
 	}
-}
-
-nav {
-
-	ul {
-		margin: 0;
-		padding: 0;
-
-		li {
-			display: inline-block;
-			border-right: 1px solid #e7e7e7;
-
-			a {
-				color: $color-flatby-text;
-				text-decoration: none;
-				padding: 0.5em 2em;
-				display: inline-block;
-			}
-		}
-	}
-}
-
-.main-navigation {
-	margin-bottom: $global-margin;
 }
 
 .button {
@@ -133,20 +116,11 @@ nav {
 	color: #fff;
 	text-decoration: none;
 	padding: 1em 2em;
+	border: 0px;
 	border-radius: $border-radius;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
 	text-align: center;
-
-	&.button-external {
-		position: absolute;
-		right: -200px;
-		bottom: 0px;
-		border: 0px;
-		border-radius: 0px;
-		width: 200px;
-		padding: 0.5em;
-	}
 }
 
 
@@ -166,7 +140,10 @@ hr {
 }
 
 
-.main-blurb {
+
+
+// Blurbs have huge h1 elements and centered text - works with .transparent to remove the background
+.blurb {
 	@extend .no-padding;
 	text-align: center;
 	margin-bottom: 3em;
@@ -181,7 +158,7 @@ hr {
 	h1 {
 		font-size: 4.5em;
 		margin-top: 50px;
-		margin-bottom: 30px;
+		margin-bottom: 0.3em;
 	}
 
 	h2 {
@@ -204,6 +181,35 @@ hr {
 		top: 45px;
 	}
 }
+
+@media (max-width: 1023px) {
+
+	.blurb {
+
+		h1 {
+			font-size: 3em;
+		}
+
+		p {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+
+		hr {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -242,7 +248,7 @@ hr {
 // Comments & stuff
 
 .comment {
-	width: 80%;// temporary for now for presentation's shake
+	width: 80%;
 	margin-bottom: 4em;
 
 	h1 {
@@ -317,31 +323,8 @@ hr {
 
 
 
-form {
-	textarea {
-		
-	}
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Genral structure stuff (to be moved to their own files)
 
 @import "compass/utilities/general/clearfix";
 
@@ -350,13 +333,28 @@ form {
 	@include pie-clearfix;
 }
 
-.columns-2 {
-	width: 50%;
-	float: left;
+.columns {
+	.columns-2 {
+		width: 50%;
+		float: left;
+	}
+
+	.columns-3 {
+		width: 33.33%;
+		float: left;
+	}
+
+	.columns-4 {
+		width: 25%;
+		float: left;
+	}
 }
 
-.columns-2 {
-	
-}
+
+
+@import '_navigation.scss';
+@import '_forms.scss';
+
+
 
 

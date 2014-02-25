@@ -1,0 +1,47 @@
+.main-navigation {
+	margin-bottom: $global-margin;
+
+	nav {
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				border-right: 1px solid #e7e7e7;
+
+				a {
+					color: $color-flatby-text;
+					text-decoration: none;
+					padding: 0.5em 2em;
+					display: inline-block;
+
+					&.active {
+						color: $color-flatby-main;
+					}
+				}
+			}
+		}
+	}
+}
+
+.breadcrumbs {
+
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		color: #8a8a8a;
+		font-weight: 300;
+		font-size: 0.9em;
+
+		&.active-page {
+			color: $color-flatby-text;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+}

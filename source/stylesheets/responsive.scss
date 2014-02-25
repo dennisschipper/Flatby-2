@@ -1,0 +1,12 @@
+// Everything under 960px
+@media (max-width: 959px) {
+
+	// Responsive Columns
+	// Reset width to auto
+	.columns {
+		.columns-2, .columns-3, .columns-4 {
+			float: none;
+			width: auto;
+		}
+	}
+}

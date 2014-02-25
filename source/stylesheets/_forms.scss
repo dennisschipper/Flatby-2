@@ -1,0 +1,27 @@
+form {
+
+	* {
+		font-family: $font-stack-flatby;
+		font-size: 1em;
+	}
+
+	input[type="text"] {
+
+	}
+
+	textarea {
+		display: block;
+		border: 1px solid #ededed;
+		width: 100%;
+		min-height: 130px;
+		margin-top: $global-margin;
+		margin-bottom: $global-margin;
+		padding: $global-margin;
+	}
+
+	input[type="submit"], button {
+		@extend .button;
+		border-radius: 0px;
+		border-bottom: 0px;
+	}
+}
