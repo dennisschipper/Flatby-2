@@ -1,0 +1,42 @@
+.button {
+	font-weight: 600;
+	display: inline-block;
+	background: $color-flatby-main;
+	color: #fff;
+	text-decoration: none;
+	padding: 1em 2em;
+	border: 0px;
+	border-radius: $border-radius;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
+	text-align: center;
+	cursor: pointer;
+}
+
+.button {
+
+
+	&.neutral {
+
+	}
+
+	&.positive {
+
+	}
+
+	&.negative {
+
+	}
+
+	&.alert {
+
+	}
+
+	&.button-small {
+
+	}
+
+	&.button-large {
+
+	}
+}
