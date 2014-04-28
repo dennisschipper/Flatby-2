@@ -8,7 +8,7 @@
 
 			li {
 				display: inline-block;
-				border-right: 1px solid #e7e7e7;
+				border-right: 1px solid rgba(0, 0, 0, 0.05);
 
 				a {
 					color: $color-flatby-text;
@@ -22,6 +22,29 @@
 				}
 			}
 		}
+	}
+
+	&.inverted {
+		background: $color-flatby-main;
+
+		nav {
+
+			color: #fff;
+
+			ul {
+				li {
+					a {
+						color: inherit;
+
+						&.active {
+							opacity: 0.5;
+						}
+					}
+				}
+			}
+		}
+
+
 	}
 }
 

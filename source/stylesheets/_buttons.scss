@@ -14,22 +14,26 @@
 }
 
 .button {
-
+	border-bottom: 3px solid #00a685;
 
 	&.neutral {
-
+		background: #c0c0c0;
+		border-bottom: 3px solid #a6a5a5;
 	}
 
 	&.positive {
-
+		background: #00c7a6;
+		border-bottom: 3px solid #00a685;
 	}
 
 	&.negative {
-
+		background: #cd3543;
+		border-bottom: 3px solid #b52836;
 	}
 
 	&.alert {
-
+		background: #bac543;
+		border-bottom: 3px solid #aaae30;
 	}
 
 	&.button-small {
