@@ -590,7 +590,7 @@ $global-margin: 1em;
 $global-padding: 1em;
 $global-padding-tiny: 0.33em;
 
-$bold: 700;
+$bold: 500;
 
 * {
 	@include box-sizing(border-box);
@@ -955,3 +955,4 @@ hr {
 @import '_navigation.scss';
 @import '_forms.scss';
 @import '_buttons.scss';
+@import 'modals.scss';
