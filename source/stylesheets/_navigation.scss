@@ -112,6 +112,8 @@
 	width: 250px;
 	color: #f6f6f6;
 
+	transition: all 0.5s ease-in-out;
+
 	a {
 		color: inherit;
 		font-size: 0.9em;
@@ -120,24 +122,11 @@
 }
 
 .panel-side-slider.hidden {
-	left: -250px;
+	left: -350px;
+	transform: perspective(200px) rotateX(10deg);
+  transform-origin: 50% 0 0;
+  transition: all 1s ease;
 }
-
-
-.panel-side-slider {
-	a:hover {
-		-moz-animation: TEST 1s 1 cubic-bezier(0.600, -0.280, 0.735, 0.045);
-	}
-
-}
-
-@-moz-keyframes TEST {
-	0% { margin-left: 0px; }
-	50% { margin-left: 20px; }
-	100% { margin-left: 0px; }
-}
-
-
 
 
 

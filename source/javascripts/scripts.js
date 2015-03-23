@@ -30,7 +30,15 @@ $(document).ready( function() {
   })
 
   $('.im-a-hamburger').click(function() {
-    $('.panel-side-slider').toggle();
+    if ($('.panel-side-slider').hasClass('hidden') )
+    {
+      $('.panel-side-slider').removeClass('hidden');
+    }
+    else
+    {
+      $('.panel-side-slider').addClass('hidden');
+    }
+    return false;
   })
 
 })
