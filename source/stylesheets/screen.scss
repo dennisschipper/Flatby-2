@@ -608,6 +608,7 @@ body {
 
 a {
 	color: $color-flatby-main;
+  position: relative; // For the tooltips
 }
 
 p {
@@ -956,3 +957,4 @@ hr {
 @import '_forms.scss';
 @import '_buttons.scss';
 @import 'modals.scss';
+@import '_tooltips.scss';

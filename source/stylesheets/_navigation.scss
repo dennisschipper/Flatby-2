@@ -70,7 +70,7 @@
 }
 
 
-
+// Demo: /side-slider.html
 .im-a-hamburger {
 	position: fixed;
 	top: 20px;
@@ -123,9 +123,6 @@
 
 .panel-side-slider.hidden {
 	left: -350px;
-	transform: perspective(200px) rotateX(10deg);
-  transform-origin: 50% 0 0;
-  transition: all 1s ease;
 }
 
 

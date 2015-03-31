@@ -1,5 +1,4 @@
 $(document).ready( function() {
-  console.log("hey");
 
   $('.toggle-modal').click(function() {
     // $('.modal').toggle();
@@ -15,6 +14,19 @@ $(document).ready( function() {
 
 
 
+
+
+
+
+  $(".button").mouseover(function(that) {
+    $(this).after(
+      "<div class='tooltip'>" + $(this).data("tooltip") + "</div>"
+    )
+  });
+
+  $(".button").mouseout(function() {
+    $('body .tooltip').remove();
+  });
 
 
 
